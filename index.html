@@ -4,29 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify clone </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
-    <title>spotify</title>
 </head>
 
 <body>
-    <div class="container flex bg-black  ">
-        <div class="left">
-            <div class="home rounded m-1 bg-grey p-1">
-                <div class="logo"><img  class="invert" src="assets/spotify.svg" alt=""></div>
-                <ul>
-                    <li><img class="invert" src="assets/home.svg" alt="">Home</li>
-                    <li style="padding-top: 20px;" >  <img class="invert" src="assets/serach.svg"alt="serach" > Search  </li>
-                </ul>
-            </div>
+    <nav class="navbar">
 
-            <div class="library bg-grey rounded m-1 p-1">
-                your library
-            </div>
-           
+
+        <div class="left-nav"><img class="logo" src="assets/logo.svg" alt=""></div>
+
+        <div class="nav-mid">
+            <span class="homeicon"><img src="assets/home.svg" alt=""></span>
+
+            <input type="text" class="search" placeholder="  what you wanna play?" />
+
+
+
         </div>
-        <div class="right bg-grey"></div>
+
+        <div class="nav-right">
+            <a href="">Premium</a>
+
+            <a href="">Support</a>
+            <a href="">Downlaod</a>
+            <a class="p-1" href=""> | </a>
+            <a class="p-1" href="">Sign up</a>
+            <a class="p-1" href="">Install App</a>
+
+            <button class="login-btn">Log In</button>
+        </div>
+
+    </nav>
+
+    <div class="container flex bg-black  ">
+        <div class="left bg-grey rounded m-1 p-1">
+            <div class="library">
+                <div class="yourlib"> Your Library</div>
+                <button class="create-btn"> + Create </button>
+            </div>
+        <div class="playlist">
+            <ul class="song-list">
+        <li onclick="playSong('songs/song1.mp3')">Song One</li>
+        <li onclick="playSong('songs/song2.mp3')">Song Two</li>
+        
+      </ul>
+          
+
+        </div>
+        <div class="termand">
+         <a href="https://www.spotify.com/in-en/legal/end-user-agreement/">Legal</a>
+         <a href="https://www.spotify.com/in-en/safetyandprivacy">safety and privacy</a>
+         <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+         <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookie</a>
+         <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">about ads</a>
+         <a href="https://www.spotify.com/in-en/accessibility">Accessibility </a>
+         <div><button class="english"> english</button></div>
+
+        </div>
+
+
+
+        </div>
+        <div class="right bg-grey rounded m-1 p-1">
+           
+  <div class="card">
+    <h2>🔥 Trending Now</h2>
+    <ul class="song-grid">
+      <li class="song-square">
+        <img src="assets/cover1.jpg" alt="cover" />
+        <div class="song-text">
+          <h4>Blinding Lights</h4>
+          <p>The Weeknd</p>
+        </div>
+      </li>
+      <li class="song-square">
+        <img src="assets/cover2.jpg" alt="cover" />
+        <div class="song-text">
+          <h4>Shape of You</h4>
+          <p>Ed Sheeran</p>
+        </div>
+      </li>
+      <!-- Add more cards -->
+    </ul>
+  </div>
+
+
     </div>
+ 
+  <div class="playbar">
+    
+    
+    <div class="play-left">
+      
+      <div class="song-info">
+       
+        <div>
+          <div class="song-title">Sample Song</div>
+          <div class="artist-name">Artist Name</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTER: Controls + Timeline -->
+    <div class="play-center">
+      <div class="controls">
+        <img src="assets/forward-step-svgrepo-com.svg" alt="prev" class="control-icon rotate" />
+        <img src="assets/play-circle-svgrepo-com.svg" alt="play" class="control-icon big" />
+        <img src="assets/forward-step-svgrepo-com.svg" alt="next" class="control-icon" />
+      </div>
+      <div class="timeline">
+        <span>0:00</span>
+        <input type="range" class="progress-bar" />
+        <span>3:45</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: Volume -->
+    <div class="play-right">
+        <div playtimer></div>
+        <div><img src="assets/speaker-2-svgrepo-com.svg" width="50px" alt=""></div>
+      <img src="assets/volume.svg" alt="" class="control-icon" />
+      <input type="range" class="volume-bar" />
+    </div>
+    
+  </div>
+
+<audio id="audioPlayer" controls style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);"></audio>
+<script src="script.js"></script>
 </body>
 
-</html><img src="" alt="">
+</html>

@@ -1,3 +1,7 @@
+.invert{
+    filter: invert(1);
+}
+
 .border{
     background-color: white;
     border: 2px solid red;
@@ -16,9 +20,7 @@
     background-color: black;
     color: white;
 }
-.invert{
-    filter: invert(1);
-}
+
 .bg-grey{
     background-color: #121212;
 }
@@ -31,3 +33,6 @@
 .p-1{
     padding: 10px;
 }
+.bg-lightb{
+    
+} 
