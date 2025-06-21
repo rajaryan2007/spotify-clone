@@ -44,95 +44,172 @@
                 <div class="yourlib"> Your Library</div>
                 <button class="create-btn"> + Create </button>
             </div>
-        <div class="playlist">
-            <ul class="song-list">
-        <li onclick="playSong('songs/song1.mp3')">Song One</li>
-        <li onclick="playSong('songs/song2.mp3')">Song Two</li>
-        
-      </ul>
-          
+            <div >
+                <audio id="audio" src=""></audio>
+              
 
-        </div>
-        <div class="termand">
-         <a href="https://www.spotify.com/in-en/legal/end-user-agreement/">Legal</a>
-         <a href="https://www.spotify.com/in-en/safetyandprivacy">safety and privacy</a>
-         <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
-         <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookie</a>
-         <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">about ads</a>
-         <a href="https://www.spotify.com/in-en/accessibility">Accessibility </a>
-         <div><button class="english"> english</button></div>
 
-        </div>
+            </div>
+            <div class="termand">
+                <a href="https://www.spotify.com/in-en/legal/end-user-agreement/">Legal</a>
+                <a href="https://www.spotify.com/in-en/safetyandprivacy">safety and privacy</a>
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookie</a>
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">about ads</a>
+                <a href="https://www.spotify.com/in-en/accessibility">Accessibility </a>
+                <div><button class="english"> english</button></div>
+
+            </div>
 
 
 
         </div>
-        <div class="right bg-grey rounded m-1 p-1">
-           
-  <div class="card">
-    <h2>🔥 Trending Now</h2>
-    <ul class="song-grid">
-      <li class="song-square">
-        <img src="assets/cover1.jpg" alt="cover" />
-        <div class="song-text">
-          <h4>Blinding Lights</h4>
-          <p>The Weeknd</p>
+        <div class="right bg-grey rounded m-1 p-1 hidden">
+
+            <div class="card">
+                <h2>🔥 Trending Now</h2>
+                <ul class="song-grid">
+                    <li class="song-square" onclick="playSong('songs/song1.mp3', 'Blinding Lights', 'The Weeknd', 'assets/song1.jpg')">
+                        <img src="assets/song1.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>hit the road jack</h4>
+                            <p>The Weeknd</p>
+                        </div>
+                    </li>
+                    <li onclick="playSong('songs/song2.mp3')" class="song-square">
+                        <img src="assets/cover2.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Softcore</h4>
+                            <p>The-neighbourhood</p>
+                        </div>
+                    </li>
+                    <li class="song-square" onclick="playSong('songs/song3.mp3')">
+                        <img src="assets/cover3.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Shape of You</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                    </li>
+                    <li class="song-square" onclick="playSong('songs/song4.mp3')">
+                        <img src="assets/cover2.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Shape of You</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="card">
+                <h2>🔥 most played</h2>
+                <ul class="song-grid">
+                    <li class="song-square">
+                        <img src="assets/cover1.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Blinding Lights</h4>
+                            <p>The Weeknd</p>
+                        </div>
+                    </li>
+                    <li class="song-square">
+                        <img src="assets/cover2.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Shape of You</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                    </li>
+                    <li class="song-square">
+                        <img src="assets/cover3.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Shape of You</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                    </li>
+                    <li class="song-square">
+                        <img src="assets/cover2.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Shape of You</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="card">
+                <h2>🔥 most played</h2>
+                <ul class="song-grid">
+                    <li class="song-square">
+                        <img src="assets/cover1.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Blinding Lights</h4>
+                            <p>The Weeknd</p>
+                        </div>
+                    </li>
+                    <li class="song-square">
+                        <img src="assets/cover2.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Shape of You</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                    </li>
+                    <li class="song-square">
+                        <img src="assets/cover3.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Shape of You</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                    </li>
+                    <li class="song-square">
+                        <img src="assets/cover2.jpg" alt="cover" />
+                        <div class="song-text">
+                            <h4>Shape of You</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                    </li>
+
+
+            </div>
+
+
+
         </div>
-      </li>
-      <li class="song-square">
-        <img src="assets/cover2.jpg" alt="cover" />
-        <div class="song-text">
-          <h4>Shape of You</h4>
-          <p>Ed Sheeran</p>
+        <div class="playbar">
+            <div class="play-left">
+                <img id="cover-img" src="assets/cover1.jpg" alt="" width="60" height="60" />
+                <div class="song-info">
+                    <div id="song-title">Sample Song</div>
+                    <div id="artist-name">Artist Name</div>
+                </div>
+            </div>
+
+            <div class="play-center">
+                <div class="controls">
+                    <img src="assets/forward-step-svgrepo-com.svg" alt="prev" class="control-icon rotate" />
+                    <button class="palyvertical" onclick="playAudio()" id="button1">
+                        <img src="assets/pause-button-made-up-of-two-vertical-lines-svgrepo-com.svg" alt="play"
+                            class="control-icon big" />
+                    </button>
+                    <img src="assets/forward-step-svgrepo-com.svg" alt="next" class="control-icon" />
+                </div>
+                <div class="timeline">
+                    <span id="currentTime">0:00</span>
+                    <input type="range" id="progress" value="0" min="0" max="100" class="progress-bar">
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="play-right">
+                <img class="invert" src="assets/speaker-2-svgrepo-com.svg" width="20px" alt="">
+                <img src="assets/volume.svg" alt="" class="control-icon" />
+                <input type="range" class="volume-bar" />
+            </div>
         </div>
-      </li>
-      <!-- Add more cards -->
-    </ul>
-  </div>
 
 
-    </div>
- 
-  <div class="playbar">
-    
-    
-    <div class="play-left">
-      
-      <div class="song-info">
-       
-        <div>
-          <div class="song-title">Sample Song</div>
-          <div class="artist-name">Artist Name</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- CENTER: Controls + Timeline -->
-    <div class="play-center">
-      <div class="controls">
-        <img src="assets/forward-step-svgrepo-com.svg" alt="prev" class="control-icon rotate" />
-        <img src="assets/play-circle-svgrepo-com.svg" alt="play" class="control-icon big" />
-        <img src="assets/forward-step-svgrepo-com.svg" alt="next" class="control-icon" />
-      </div>
-      <div class="timeline">
-        <span>0:00</span>
-        <input type="range" class="progress-bar" />
-        <span>3:45</span>
-      </div>
-    </div>
 
-    <!-- RIGHT: Volume -->
-    <div class="play-right">
-        <div playtimer></div>
-        <div><img src="assets/speaker-2-svgrepo-com.svg" width="50px" alt=""></div>
-      <img src="assets/volume.svg" alt="" class="control-icon" />
-      <input type="range" class="volume-bar" />
-    </div>
-    
-  </div>
-
-<audio id="audioPlayer" controls style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);"></audio>
-<script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

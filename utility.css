@@ -36,3 +36,6 @@
 .bg-lightb{
     
 } 
+.hidden{
+    overflow: scroll;
+}
