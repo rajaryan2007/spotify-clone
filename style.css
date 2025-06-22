@@ -415,7 +415,9 @@ song-list {
   border: none;
 }
 
-
+.palyvertical:hover{
+  transform: scale(1.05);
+}
 
 
 
