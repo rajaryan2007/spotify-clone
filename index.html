@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>spotify clone </title>
     <link rel="stylesheet" href="style.css">
@@ -44,10 +44,31 @@
             <div class="library">
                 <div class="yourlib"> Your Library</div>
                 <button class="create-btn"> + Create </button>
+
+
+
+
+
             </div>
-            <div >
+
+            <div class="sidebar">
+
+
+                <div class="sidebar-card ">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+                <div class="sidebar-card ">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+
+            <div>
                 <audio id="audio" src=""></audio>
-              
+
 
 
             </div>
@@ -70,29 +91,32 @@
             <div class="card">
                 <h2>🔥 Trending Now</h2>
                 <ul class="song-grid">
-                    <li class="song-square" onclick="playSong('songs/song1.mp3', 'Blinding Lights', 'The Weeknd', 'assets/song1.jpg')">
+                    <li class="song-square"
+                        onclick="playSong('songs/song1.mp3', 'hit the road jack', '', 'assets/song1.jpg')">
                         <img src="assets/song1.jpg" alt="cover" />
                         <div class="song-text">
                             <h4>hit the road jack</h4>
                             <p>The Weeknd</p>
                         </div>
                     </li>
-                    <li onclick="playSong('songs/song2.mp3')" class="song-square">
-                        <img src="assets/cover2.jpg" alt="cover" />
+                    <li onclick="playSong('songs/song2.mp3' ,'softcore', 'The-neighbourhood', 'assets/soft.jpg')"
+                        class="song-square">
+                        <img src="assets/soft.jpg" alt="cover" />
                         <div class="song-text">
                             <h4>Softcore</h4>
                             <p>The-neighbourhood</p>
                         </div>
                     </li>
-                    <li class="song-square" onclick="playSong('songs/song3.mp3')">
-                        <img src="assets/cover3.jpg" alt="cover" />
+                    <li class="song-square" onclick="playSong('songs/song3.mp3', '505', '', 'assets/505.jpg')">
+                        <img src="assets/505.jpg" alt="cover" />
                         <div class="song-text">
                             <h4>505</h4>
-                            <p>Ed Sheeran</p>
+                            <p></p>
                         </div>
                     </li>
-                    <li class="song-square" onclick="playSong('songs/song4.mp3')">
-                        <img src="assets/cover2.jpg" alt="cover" />
+                    <li class="song-square"
+                        onclick="playSong('songs/song4.mp3', 'shape of you', '', 'assets/cover4.jpg')">
+                        <img src="assets/cover4.jpg" alt="cover" />
                         <div class="song-text">
                             <h4>Shape of You</h4>
                             <p>Ed Sheeran</p>
@@ -105,32 +129,33 @@
             <div class="card">
                 <h2>🔥 most played</h2>
                 <ul class="song-grid">
-                    <li class="song-square">
-                        <img src="assets/cover1.jpg" alt="cover" />
+                    <li class="song-square" onclick="playSong('songs/song12.mp3', 'safari', '', 'assets/song5.jpg')">
+                        <img src="assets/song5.jpg" alt="cover" />
                         <div class="song-text">
-                            <h4>Blinding Lights</h4>
-                            <p>The Weeknd</p>
+                            <h4>safari</h4>
+                            <p></p>
                         </div>
                     </li>
-                    <li class="song-square">
-                        <img src="assets/cover2.jpg" alt="cover" />
+                    <li class="song-square" onclick="playSong('songs/song5.mp3', 'mood24K', '', 'assets/song6.jpg')">
+                        <img src="assets/song6.jpg" alt="cover" />
                         <div class="song-text">
-                            <h4>Shape of You</h4>
+                            <h4>mood24K</h4>
+                            <p></p>
+                        </div>
+                    </li>
+                    <li class="song-square" onclick="playSong('songs/song6.mp3', 'attention', '', 'assets/song7.jpg')">
+                        <img src="assets/song7.png" alt="cover" />
+                        <div class="song-text">
+                            <h4>attention</h4>
                             <p>Ed Sheeran</p>
                         </div>
                     </li>
-                    <li class="song-square">
-                        <img src="assets/cover3.jpg" alt="cover" />
+                    <li class="song-square"
+                        onclick="playSong('songs/song7.mp3', 'Danza Kuduro', 'Don Omar', 'assets/song8.jpg')">
+                        <img src="assets/song8.jpg" alt="cover" />
                         <div class="song-text">
-                            <h4>Shape of You</h4>
-                            <p>Ed Sheeran</p>
-                        </div>
-                    </li>
-                    <li class="song-square">
-                        <img src="assets/cover2.jpg" alt="cover" />
-                        <div class="song-text">
-                            <h4>Shape of You</h4>
-                            <p>Ed Sheeran</p>
+                            <h4>Danza Kuduro </h4>
+                            <p>Don Omar-</p>
                         </div>
                     </li>
                 </ul>
@@ -140,32 +165,35 @@
             <div class="card">
                 <h2>🔥 most played</h2>
                 <ul class="song-grid">
-                    <li class="song-square">
-                        <img src="assets/cover1.jpg" alt="cover" />
+                    <li class="song-square"
+                        onclick="playSong('songs/song8.mp3', 'Heat waves x ok jaanu (slow+reverb)', '', 'assets/song9.jpg')">
+                        <img src="assets/song9.jpg" alt="cover" />
                         <div class="song-text">
-                            <h4>Blinding Lights</h4>
-                            <p>The Weeknd</p>
+                            <h4>Heat waves x ok jaanu (slow+reverb)</h4>
+                            <p></p>
                         </div>
                     </li>
-                    <li class="song-square">
-                        <img src="assets/cover2.jpg" alt="cover" />
+                    <li class="song-square" onclick="playSong('songs/song9.mp3', 'wannabe', '', 'assets/song10.jpg')">
+                        <img src="assets/song10.jpg" alt="cover" />
                         <div class="song-text">
-                            <h4>Shape of You</h4>
-                            <p>Ed Sheeran</p>
+                            <h4>wannabe</h4>
+                            <p></p>
                         </div>
                     </li>
-                    <li class="song-square">
-                        <img src="assets/cover3.jpg" alt="cover" />
+                    <li class="song-square"
+                        onclick="playSong('songs/song10.mp3', 'Way Down We Go', '', 'assets/song11.jpg')">
+                        <img src="assets/song11.jpg" alt="cover" />
                         <div class="song-text">
-                            <h4>Shape of You</h4>
-                            <p>Ed Sheeran</p>
+                            <h4>Way Down We Go</h4>
+                            <p></p>
                         </div>
                     </li>
-                    <li class="song-square">
-                        <img src="assets/cover2.jpg" alt="cover" />
+                    <li class="song-square"
+                        onclick="playSong('songs/song11.mp3', 'sunflower', '', 'assets/song12.jpg')">
+                        <img src="assets/song12.jpg" alt="cover" />
                         <div class="song-text">
-                            <h4>Shape of You</h4>
-                            <p>Ed Sheeran</p>
+                            <h4>sunflower</h4>
+                            <p></p>
                         </div>
                     </li>
 
